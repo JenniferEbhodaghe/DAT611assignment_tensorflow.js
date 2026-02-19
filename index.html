@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Insights Dashboard</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Company Catch Phrase Analysis</h1>
+        <p>Analyze company branding by calculating catchphrase complexity.</p>
+        
+        <button id="draw-chart-btn" onclick="plotCatchPhraseCharacterLength()">
+             Generate Analysis
+        </button>
+        
+        <div class="status-box">
+            <p><strong>Status:</strong> The chart will render in the <em>TensorFlow Visor</em> on the right.</p>
+        </div>
+    </div>
+
+    <script src="remoteAPI.js"></script>
+</body>
+</html>
